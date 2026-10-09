@@ -1,0 +1,12 @@
+Un code correcteur ajoute de la redondance a un message pour que le
+destinataire puisse detecter et reparer les erreurs introduites par le canal
+de transmission, sans avoir a redemander les donnees.
+
+Ici, chaque bloc de 240 bits de donnees recoit 8 bits de controle : le reste
+de sa division par le polynome generateur G(x) = x^8 + x^4 + x^3 + x^2 + 1.
+A la reception, le reste de la division du mot recu (le syndrome) vaut zero
+si le mot est intact. Sinon, il designe la position exacte du bit errone,
+a condition qu'une seule erreur se soit produite dans le bloc.
+
+Ce texte fait plusieurs blocs : il sert a verifier le decoupage, le
+remplissage du dernier bloc et la reconstruction du fichier d'origine.

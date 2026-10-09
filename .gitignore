@@ -1,0 +1,11 @@
+# Fichiers generes
+/polyfec
+/build/
+*.o
+*.d
+*.exe
+
+# Editeurs et systemes
+.vscode/
+.idea/
+.DS_Store
