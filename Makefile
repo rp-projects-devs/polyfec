@@ -34,7 +34,7 @@ unit-test: $(TARGET)
 	./$(TARGET) test
 
 cli-test: $(TARGET)
-	./tests/cli_tests.sh ./$(TARGET)
+	bash tests/cli_tests.sh ./$(TARGET)
 
 ## Outils de verification
 
